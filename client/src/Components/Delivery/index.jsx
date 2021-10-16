@@ -15,6 +15,7 @@ const Delivery = () => {
     useEffect(() => {
     reduxState?.restaurants &&  setRestaurantList(reduxState?.restaurants);
     },[reduxState?.restaurants])
+    console.log({restaurantList});
     return (
         <>
         <DeliveyCarousal/>

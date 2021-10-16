@@ -37,6 +37,7 @@ const Overview = () => {
     );
 
     const dispatch = useDispatch();
+    console.log({reduxState});
 
     useEffect(() => {
         if(reduxState){

@@ -20,7 +20,7 @@ useEffect(() => {
 
 
     return (
-        <>
+        
         <Link to={`/restaurant/${props._id}`} className="w-full md:w-1/2 lg:w-1/3 hover:shadow-2xl transition duration-200 ease-in-out">
          <div className="bg-white p-4 mb-4 ">
         <div className="w-full h-56 lg:h-64 relative rounded-2xl">
@@ -61,7 +61,7 @@ useEffect(() => {
         </div>
       </div>
       </Link>
-        </>
+          
     )
 }
 

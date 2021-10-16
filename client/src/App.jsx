@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 
 //import HOC
 import HomeLayoutHOC from "./HOC/Home.HOC";
-import RestaurantHOC from "./HOC/Restaurant.HOC";
+import RestaurantHOC from "./HOC/RestaurantHOC";
 import CheckoutHOC from "./HOC/Checout.Hoc";
 
 //component
@@ -38,9 +38,8 @@ function App() {
     <Route path="/" exact>
       <Redirect to="/delivery"/>
     </Route>
-    <Route path="/restaurant/:id" exact>
-      <Redirect exact component={RedirectRestaurant}/>
-    </Route>
+    <Route path="/restaurant/:id" exact component={RedirectRestaurant} />
+
     <HomeLayoutHOC path="/:type" exact component={Home}/>
     <RestaurantHOC path="/restaurant/:id/overview" exact component={Overview}/>
     <HomeLayoutHOC path="/google/:token" exact component={GoogleAuth} />

@@ -6,6 +6,7 @@ import passport from "passport";
 //Models
 import { RestaurantsModel } from "../../database/allModels";
 //validation
+import { ValidateParticularRes } from '../../Validation/restaurant'
 
 const Router = express.Router();
 
@@ -38,7 +39,7 @@ Router.get("/:_id", async (req,res) => {
       try {
           await ValidateParticularRes(req.params);
           const {_id} = req.params;
-          const restaurant = await RestaurantsModel.findOne(_id);
+          const restaurant = await RestaurantsModel.findById(_id);
 
           if(!restaurant) {
               return res.status(404).json({error: "Restaurant Not Found"});
