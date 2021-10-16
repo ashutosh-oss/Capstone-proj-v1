@@ -13,7 +13,7 @@ const Mapview = (props) => {
                <h5 className="text-zomato-400 font-medium">{props.phoneNumber}</h5>
                </div>
                <div>
-                   <h4 className="text-xl font-medium">Dirextion</h4>
+                   <h4 className="text-xl font-medium">Direction</h4>
                    <div className="w-full h-48">
                    <MapContainer 
                    center={props.mapLocation} 

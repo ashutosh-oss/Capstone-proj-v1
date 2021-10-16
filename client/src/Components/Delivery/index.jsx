@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 //components
 import DeliveyCarousal from './DeliveyCarousal'
+import Brand from './Brand';
 import RestaurantCard from '../RestaurantCard';
 
 const Delivery = () => {
@@ -17,6 +18,7 @@ const Delivery = () => {
     return (
         <>
         <DeliveyCarousal/>
+        <div className="text-gray-800 font-semibold text-2xl my-5">Delivery Restaurants Near Your Presence</div>
         <div className="flex justify-between flex-wrap">
             {restaurantList.map((restaurant) => (
                 <RestaurantCard {...restaurant} key={restaurant._id}/>

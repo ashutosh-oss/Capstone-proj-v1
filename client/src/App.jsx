@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 
 //import HOC
 import HomeLayoutHOC from "./HOC/Home.HOC";
-import RestaurantHOC from "./HOC/RestaurantHOC";
+import RestaurantHOC from "./HOC/Restaurant.HOC";
 import CheckoutHOC from "./HOC/Checout.Hoc";
 
 //component
@@ -43,6 +43,7 @@ function App() {
     </Route>
     <HomeLayoutHOC path="/:type" exact component={Home}/>
     <RestaurantHOC path="/restaurant/:id/overview" exact component={Overview}/>
+    <HomeLayoutHOC path="/google/:token" exact component={GoogleAuth} />
     <RestaurantHOC path="/restaurant/:id/order-online" exact component={OrderOnline}/>
     <RestaurantHOC path="/restaurant/:id/menu" exact component={Menu}/>
     <RestaurantHOC path="/restaurant/:id/reviews" exact component={Reviews}/>
