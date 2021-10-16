@@ -34,7 +34,7 @@ export const orderPlaced = (cartData) => async (dispatch) => {
 
       axios({
         method: "POST",
-        url: `http://localhost:5000/order/new`,
+        url: `http://localhost:4000/order/new`,
         data: { orderDetails },
       });
     });

@@ -18,7 +18,6 @@ import Photos from "./Page/Restaurant/Photos";
 import CheckoutPage from "./Page/Checkout.page";
 import RedirectRestaurant from "./Page/Restaurant/Redirect";
 import GoogleAuth from "./Page/GoogleAuth";
-
 //  redux action
 import { getMyself } from "./Redux/Reducer/User/User.action";
 
